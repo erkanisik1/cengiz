@@ -10,7 +10,7 @@
         <Summary>ClamAv-Gui.</Summary>
         <Description>ClaAv-Gui is a graphical interface for ClamAv antivirus software</Description>
         <License>GPL3</License>
-        <Archive sha1sum="42d282254974e04415e14fbcab279b46b2f8f6a8" type="targz">https://dl.opendesktop.org/api/files/downloadfile/id/1466630823/s/27319f2166b19b67fa165985a135f100/t/1519295518/u//170782-ClamAV-GUI-0.4.1.tar.gz</Archive>
+        <Archive sha1sum="42d282254974e04415e14fbcab279b46b2f8f6a8" type="targz">https://sourceforge.net/projects/pisilinux/files/source/170782-ClamAV-GUI-0.4.1.tar.gz/download</Archive>
         <BuildDependencies>
             <Dependency>clamav-devel</Dependency>
             <Dependency>qt5-base-devel</Dependency>
