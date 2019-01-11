@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>panda-kde</Name>
+        <Homepage>http://www.pardus.org.tr</Homepage>
+        <Packager>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>KDE Frontend for the module Panda</Summary>
+        <Description>Panda-kde is a frontend for the module Panda. It's able to configure the video driver settings and shows information about the currently used driver.</Description>
+        <Archive sha1sum="08fbfc9c5746e1606201970a1b367012f9c6293b" type="tarbz2">panda-kde-0.4.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>plasma-workspace-devel</Dependency>
+            <Dependency>kdelibs4-support-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
+            <Dependency>qt5-base-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>panda-kde</Name>
+        <RuntimeDependencies>
+            <Dependency>plasma-workspace</Dependency>
+            <Dependency>kdelibs4-support</Dependency>
+            <Dependency>qt5-base</Dependency>
+            <Dependency>package-manager</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>panda</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share/kde4/services</Path>
+            <Path fileType="localedata">/usr/share/locale/</Path>
+            <Path fileType="library">/usr/share/dbus-1/</Path>
+            <Path fileType="library">/usr/share/polkit-1/</Path>
+            <Path fileType="library">/etc/dbus-1/system.d/</Path>
+            <Path fileType="library">/usr/lib/</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2019-01-09</Date>
+            <Version>0.4</Version>
+            <Comment>First release for Pisi 2.0</Comment>
+            <Name>Ali Cengiz Kurt</Name>
+            <Email>alicengizkurt@gmail.com</Email>
+        </Update>
+    </History>
+</PISI> 
