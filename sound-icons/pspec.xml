@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>sound-icons</Name>
+        <Homepage>https://devel.freebsoft.org/pub/projects/sound-icons</Homepage>
+        <Packager>
+            <Name>Ali Cengiz Kurt</Name>
+            <Email>alicengizkurt@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>Sounds and icons for speech enabled applications</Summary>
+        <Description>Sounds for speech enabled applications
+ This package contains sound icons to be used for event signalization in
+ speech enabled applications. They are especially useful when running
+ Speech Dispatcher.</Description>
+        <Archive sha1sum="4d9284f88a95fac6eddb1becc8a7111589755a93" type="targz">https://freebsoft.org/pub/projects/sound-icons/sound-icons-0.1.tar.gz</Archive>
+        <BuildDependencies>
+        </BuildDependencies>
+        <Patches>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>sound-icons</Name>
+        <RuntimeDependency>
+            <Dependency>speech-dispatcher</Dependency>
+        </RuntimeDependency>
+        <Files>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/sounds</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2019-02-04</Date>
+            <Version>0.1</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Ali Cengiz Kurt</Name>
+            <Email>alicengizkurt@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
+ 
